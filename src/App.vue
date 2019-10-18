@@ -1,36 +1,48 @@
-<template>
-  <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
-      </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
-    </v-app-bar>
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
-  </v-app>
+<template>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <br>
+                <button class="btn btn-primary" @click="selectedComponent = 'appBlue'">Load Blue Template</button>
+                <button class="btn btn-success" @click="selectedComponent = 'appGreen'">Load Green Template</button>
+                <button class="btn btn-danger" @click="selectedComponent = 'appRed'">Load Red Template</button>
+                <hr>
+                <component :is="selectedComponent">
+                    <p>This is the Content</p>
+                </component>
+                <!--<app-blue>-->
+                    <!--<p>This is the Content</p>-->
+                <!--</app-blue>-->
+                <!--<app-green>-->
+                    <!--<p>This is the Content</p>-->
+                <!--</app-green>-->
+                <!--<app-red>-->
+                    <!--<p>This is the Content</p>-->
+                <!--</app-red>-->
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
+    import Blue from './components/Blue.vue';
+    import Green from './components/Green.vue';
+    import Red from './components/Red.vue';
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
-  data: () => ({
-    //
-  }),
-};
+    export default {
+        data: function() {
+          return {
+              selectedComponent: 'appBlue'
+          }
+        },
+        components: {
+            appBlue: Blue,
+            appGreen: Green,
+            appRed: Red
+        }
+    }
 </script>
+
+<style>
+</style>
