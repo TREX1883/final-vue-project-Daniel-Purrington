@@ -7,6 +7,7 @@
                 <button class="btn btn-primary" @click="selectedComponent = 'appBlue'">Load Blue Template</button>
                 <button class="btn btn-success" @click="selectedComponent = 'appGreen'">Load Green Template</button>
                 <button class="btn btn-danger" @click="selectedComponent = 'appRed'">Load Red Template</button>
+                <button class="btn btn-explosion" @click="selectedComponent = 'appYellow'">Load Yellow Template</button>
                 <hr>
                 <component :is="selectedComponent">
                     <p>This is the Content</p>
@@ -37,6 +38,7 @@
     import Blue from './components/Blue.vue';
     import Green from './components/Green.vue';
     import Red from './components/Red.vue';
+    import Yellow from './components/Yellow.vue';
 
     export default {
         data: function() {
@@ -48,6 +50,7 @@
             appBlue: Blue,
             appGreen: Green,
             appRed: Red,
+            appYellow: Yellow,
             // Servers,
             // 'app-server-details': ServerDetails
         }
