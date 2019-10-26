@@ -23,18 +23,10 @@
                 <!--</app-red>-->
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <app-server-details></app-server-details>
-            <servers></servers>
-        </div>
-        <hr>
     </div>
 </template>
 
 <script>
-    // import Servers from './components/Servers.vue';
-    // import ServerDetails from './components/ServerDetails.vue';
     import Blue from './components/Blue.vue';
     import Green from './components/Green.vue';
     import Red from './components/Red.vue';

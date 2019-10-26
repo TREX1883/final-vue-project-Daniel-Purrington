@@ -10,11 +10,3 @@ new Vue({
 }).$mount('#app')
 
 
-
-// export const serverBus = new Vue();
-
-// new Vue({
-//   vuetify,
-//   el: '#app',
-//   render: h => h(App)
-// }).$mount('#app')
