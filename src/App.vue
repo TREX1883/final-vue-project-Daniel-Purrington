@@ -28,7 +28,7 @@
 
 <script>
     import Blue from './components/Blue.vue';
-    // import Green from './components/Green.vue';
+    import Green from './components/Green.vue';
     import Red from './components/Red.vue';
     import Yellow from './components/Yellow.vue';
 
@@ -40,7 +40,7 @@
         },
         components: {
             appBlue: Blue,
-            // appGreen: Green,
+            appGreen: Green,
             appRed: Red,
             appYellow: Yellow,
             // Servers,
