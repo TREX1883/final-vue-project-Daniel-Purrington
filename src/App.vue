@@ -2,7 +2,7 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
+            <div class="col-lg-12">
                 <br>
                 <button class="btn btn-primary" @click="selectedComponent = 'appBlue'">Load Blue Template</button>
                 <button class="btn btn-success" @click="selectedComponent = 'appGreen'">Load Green Template</button>
@@ -28,7 +28,7 @@
 
 <script>
     import Blue from './components/Blue.vue';
-    import Green from './components/Green.vue';
+    // import Green from './components/Green.vue';
     import Red from './components/Red.vue';
     import Yellow from './components/Yellow.vue';
 
@@ -40,7 +40,7 @@
         },
         components: {
             appBlue: Blue,
-            appGreen: Green,
+            // appGreen: Green,
             appRed: Red,
             appYellow: Yellow,
             // Servers,
@@ -49,5 +49,8 @@
     }
 </script>
 
-<style>
+<style scope>
+.container {
+ background-color: gray;
+}
 </style>

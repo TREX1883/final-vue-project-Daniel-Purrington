@@ -87,12 +87,12 @@
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 from-group">
                     <label for="priority">Priority</label>
-                    <select
+                    <!-- <select
                             id="priority"
                             class="form-control"
                             v-model="selectedPriority">
                         <option v-for="priority in priorities"> {{ priority }}</option>
-                    </select>
+                    </select> -->
                 </div>
             </div>
             <div class="row">
@@ -123,9 +123,9 @@
                         <p>Age: {{ userData.age }}</p>
                         <p style="white-space: pre">Message: {{ message }}</p>
                         <p><strong>Send Mail?</strong></p>
-                        <ul>
+                        <!-- <ul>
                             <li v-for="item in sendMail">{{ item }}</li>
-                        </ul>
+                        </ul> -->
                         <p>Gender:  {{ gender }}</p>
                         <p>Priority: {{ selectedPriority }}</p>
                         <p>Switched: {{ dataSwitch }}</p>
