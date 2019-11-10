@@ -4,8 +4,8 @@
         <div class="row">
             <div class="col-lg-12">
                 <v-btn class="btn btn-explosion" @click="selectedComponent = 'appLogin'">Login</v-btn>
+                <v-btn class="btn btn-success" @click="selectedComponent = 'appTrading'">MTG Trading</v-btn>
                 <v-btn class="btn btn-primary" @click="selectedComponent = 'appBlue'">Load Blue Template</v-btn>
-                <v-btn class="btn btn-success" @click="selectedComponent = 'appGreen'">Load Green Template</v-btn>
                 <v-btn class="btn btn-danger" @click="selectedComponent = 'appRed'">Load Red Template</v-btn>
                 
                 <!-- <hr> -->
@@ -27,10 +27,10 @@
 </template>
 
 <script>
-    import Blue from './components/Blue.vue';
-    import Green from './components/Green.vue';
-    import Red from './components/Red.vue';
     import Login from './components/Login.vue';
+    import Trading from './components/Trading.vue';
+    import Blue from './components/Blue.vue';
+    import Red from './components/Red.vue';
 
     export default {
         data: function() {
@@ -39,12 +39,10 @@
           }
         },
         components: {
-            appBlue: Blue,
-            appGreen: Green,
-            appRed: Red,
             appLogin: Login,
-            // Servers,
-            // 'app-server-details': ServerDetails
+            appTrading: Trading,
+            appBlue: Blue,
+            appRed: Red,
         }
     }
 </script>
