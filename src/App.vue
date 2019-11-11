@@ -2,13 +2,13 @@
 <template>
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">
-                <br>
-                <button class="btn btn-primary" @click="selectedComponent = 'appBlue'">Load Blue Template</button>
-                <button class="btn btn-success" @click="selectedComponent = 'appGreen'">Load Green Template</button>
-                <button class="btn btn-danger" @click="selectedComponent = 'appRed'">Load Red Template</button>
-                <button class="btn btn-explosion" @click="selectedComponent = 'appYellow'">Load Yellow Template</button>
-                <hr>
+            <div class="col-lg-12">
+                <v-btn class="btn btn-explosion" @click="selectedComponent = 'appLogin'">Login</v-btn>
+                <v-btn class="btn btn-success" @click="selectedComponent = 'appTrading'">MTG Trading</v-btn>
+                <v-btn class="btn btn-primary" @click="selectedComponent = 'appBlue'">Load Blue Template</v-btn>
+                <v-btn class="btn btn-danger" @click="selectedComponent = 'appRed'">Load Red Template</v-btn>
+                
+                <!-- <hr> -->
                 <component :is="selectedComponent">
                     <p>This is the Content</p>
                 </component>
@@ -23,36 +23,35 @@
                 <!--</app-red>-->
             </div>
         </div>
-        <hr>
-        <div class="row">
-            <servers></servers>
-        </div>
-        <hr>
     </div>
 </template>
 
 <script>
-    import Servers from './components/Servers.vue';
+    import Login from './components/Login.vue';
+    import Trading from './components/Trading.vue';
     import Blue from './components/Blue.vue';
-    import Green from './components/Green.vue';
     import Red from './components/Red.vue';
-    import Yellow from './components/Yellow.vue';
 
     export default {
         data: function() {
           return {
-              selectedComponent: 'appBlue'
+              selectedComponent: 'appLogin'
           }
         },
         components: {
+            appLogin: Login,
+            appTrading: Trading,
             appBlue: Blue,
-            appGreen: Green,
             appRed: Red,
-            appYellow: Yellow,
-            Servers,
         }
     }
 </script>
 
-<style>
+<style scope>
+    .container {
+        background-color: black;
+    }
+    .btn {
+        margin: 10px;
+    }
 </style>
