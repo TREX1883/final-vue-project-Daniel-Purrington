@@ -25,7 +25,6 @@
         </div>
         <hr>
         <div class="row">
-            <app-server-details></app-server-details>
             <servers></servers>
         </div>
         <hr>
@@ -33,8 +32,7 @@
 </template>
 
 <script>
-    // import Servers from './components/Servers.vue';
-    // import ServerDetails from './components/ServerDetails.vue';
+    import Servers from './components/Servers.vue';
     import Blue from './components/Blue.vue';
     import Green from './components/Green.vue';
     import Red from './components/Red.vue';
@@ -51,8 +49,7 @@
             appGreen: Green,
             appRed: Red,
             appYellow: Yellow,
-            // Servers,
-            // 'app-server-details': ServerDetails
+            Servers,
         }
     }
 </script>

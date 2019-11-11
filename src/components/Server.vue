@@ -11,7 +11,7 @@
 </template>
 
 <script>
-    import { serverBus } from '../../main';
+    import { serverBus } from '../main.js';
 
     export default {
         props: ['server'],
