@@ -6,7 +6,7 @@
                     <h1>Buy / Sell your MTG cards</h1>
                     <hr>
                     <div class="form-group">
-                        <label for="email">Mail</label>
+                        <label for="email">E-mail</label>
                         <input
                                 type="text"
                                 id="email"
@@ -103,10 +103,10 @@
             <hr>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <button
+                    <v-btn
                             class="btn btn-primary"
                             @click.prevent="submitted">Submit!
-                    </button>
+                    </v-btn>
                 </div>
             </div>
         </form>
@@ -145,7 +145,7 @@
                 userData: {
                     email: '',
                     password: '',
-                    age: 27
+                    age: ''
                 },
                 message: 'A new Text',
                 sendMail: [],
@@ -170,7 +170,16 @@
 <style scoped>
 
 .container {
-    background-color: white;
+    background-color: rgb(170, 168, 168);
 }
-
+.form-group {
+    margin: 7px;
+}
+input, textarea, v-btn{
+    margin: 0px 5px;
+    padding: 0px 5px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
 </style>
