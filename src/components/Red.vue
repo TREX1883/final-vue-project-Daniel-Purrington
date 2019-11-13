@@ -39,6 +39,17 @@
 </template>
 
 <script>
+ export default {
+     data() {
+         return {
+             user: {}
+         }
+     },
+     methods: {
+         submit() {
+         }
+     }
+ }
 
 </script>
 
