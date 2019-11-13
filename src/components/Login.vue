@@ -81,4 +81,8 @@
     .submit {
         opacity: .8;
     }
+    li {
+        background-color: #444;
+        color: #fff;
+    }
 </style>
