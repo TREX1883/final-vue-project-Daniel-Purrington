@@ -1,9 +1,10 @@
 // https://console.firebase.google.com/u/0/project/final-project-vue/database/final-project-vue/data/data
 
 <template>
+<div>
             <v-img
               src="@/images/Login-background.jpg">
-
+            </v-img>
             <v-row>
                 <v-col class="center" align="center">
                     <div class="form-group">
@@ -23,7 +24,8 @@
                 </v-col>
             </v-row>
              
-            </v-img>
+           
+</div>
 </template>
 
 <script>
@@ -33,7 +35,8 @@
             user: {
                 username: '',
                 email: ''
-            }
+            },
+            users: []
          };
      },
      methods: {
@@ -45,6 +48,9 @@
                 // }, error => {
                     // console.log(error);
                 // });
+                
+                /* If you now want the user available to many different routes and components,
+                seems like a good time to put that user object into local state */
          },
          getData() {
              this.$http.get('https://final-project-vue.firebaseio.com/data.json')
@@ -77,5 +83,9 @@
     }
     .submit {
         opacity: .8;
+    }
+    li {
+        background-color: #444;
+        color: #fff;
     }
 </style>
