@@ -35,7 +35,8 @@
             user: {
                 username: '',
                 email: ''
-            }
+            },
+            users: []
          };
      },
      methods: {
