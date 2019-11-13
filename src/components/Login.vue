@@ -48,6 +48,9 @@
                 // }, error => {
                     // console.log(error);
                 // });
+                
+                /* If you now want the user available to many different routes and components,
+                seems like a good time to put that user object into local state */
          },
          getData() {
              this.$http.get('https://final-project-vue.firebaseio.com/data.json')
