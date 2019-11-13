@@ -1,9 +1,10 @@
 // https://console.firebase.google.com/u/0/project/final-project-vue/database/final-project-vue/data/data
 
 <template>
+<div>
             <v-img
               src="@/images/Login-background.jpg">
-
+            </v-img>
             <v-row>
                 <v-col class="center" align="center">
                     <div class="form-group">
@@ -23,7 +24,8 @@
                 </v-col>
             </v-row>
              
-            </v-img>
+           
+</div>
 </template>
 
 <script>
