@@ -1,53 +1,91 @@
 <template>
-    <div class="container"
-    :style="{ 
-        backgroundImage: 'url(' + require('@/images/Login-background.jpg') + ')' 
-    }"
+  <div>
+    <v-row justify="space-around">
+      <v-switch v-model="extended" class="mx-2" label="Extended"></v-switch>
+      <v-switch v-model="extendedSlot" class="mx-2" label="Extension slot"></v-switch>
+      <v-switch v-model="prominent" class="mx-2" label="Prominent"></v-switch>
+      <v-switch v-model="dense" class="mx-2" label="Dense"></v-switch>
+      <v-switch v-model="collapse" class="mx-2" label="Collapse"></v-switch>
+      <v-switch v-model="flat" class="mx-2" label="Flat"></v-switch>
+      <v-switch v-model="bg" class="mx-2" label="Background"></v-switch>
+      <v-col cols="12">
+        <v-slider v-model="extensionHeight" label="Extension height" min="600" max="600"></v-slider>
+      </v-col>
+    </v-row>
+
+    <v-toolbar
+      :extended="extended"
+      :prominent="prominent"
+      :dense="dense"
+      :collapse="collapse"
+      :flat="flat"
+      :src="bg ? 'https://images2.alphacoders.com/571/571767.jpg' : undefined"
+      :extension-height="extensionHeight"
     >
-    <!-- <img id="background-image" src="/image/Login-background" alt="mtg background"> -->
-       <div class="row">
-           <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-               <h1>Http</h1>
-               <div class="form-group">
-                   <label>UserName</label>
-                   <input type="text" class="form-control" v-model="user.username">
-               </div>
-                <div class="form-group">
-                   <label>Mail</label>
-                   <input type="text" class="form-control" v-model="user.email">
-               </div>
-                <V-btn class="btn btn-primary" @click="submit">Submit</v-btn>
-                <!-- <v-btn class="btn btn-primary">test </v-btn> -->
-           </div>
-       </div>
-    </div>
+      <template v-if="extendedSlot" #extension>
+        <v-toolbar-items>
+          <v-btn text>Link 1</v-btn>
+          <v-btn text>Link 2</v-btn>
+          <v-btn text>Link 3</v-btn>
+        </v-toolbar-items>
+      </template>
 
+      <v-toolbar-title>The Magic Gatherings</v-toolbar-title>
 
+      <v-spacer></v-spacer>
 
-            <!-- <v-row align="center" class="lightbox white--text pa-2 fill-height">
-                <v-col>
-                    <div class="name" align="center">Jonathan Lee</div>
-                    <div class="email">heyfromjonathan@gmail.com</div>
-                </v-col>
-            </v-row> -->
+      <v-toolbar-items class="white">
+        <v-btn class="white" text>Login</v-btn>
+        <v-btn class="white" text>Trading</v-btn>
+        <v-btn class="white" text>Test</v-btn>
+      </v-toolbar-items>
 
-
-
-
-
-
+      <!-- <template v-if="$vuetify.breakpoint.smAndUp">
+        <v-btn icon>
+          <v-icon>mdi-export-variant</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>mdi-delete-circle</v-icon>
+        </v-btn>
+        <v-btn icon>
+          <v-icon>mdi-plus-circle</v-icon>
+        </v-btn>
+      </template> -->
+    </v-toolbar>
+  </div>
 </template>
 
 <script>
-
+export default {
+    data: () => ({
+      extended: true,
+      extendedSlot: false,
+      prominent: false,
+      dense: true,
+      collapse: false,
+      flat: false,
+      bg: true,
+      extensionHeight: 700,
+    }),
+  }
 </script>
 
 <style scoped>
     div {
-        border: 1px solid red;
-        background-color: lightcoral;
-        padding: 30px;
-        margin: 20px auto;
-        text-align: center
+        /* border: 1px solid red; */
+        /* background-color: lightcoral; */
+        /* padding: 30px; */
+        /* margin: 20px auto; */
+        /* text-align: center */
+        color: white;
     }
+    .white {
+        padding: 0px;
+        color: white;
+        /* border-radius: 15px; */
+    }
+    /* v-toolbar-items {
+        background-color: red;
+        opacity: .5;
+    } */
 </style>

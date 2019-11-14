@@ -1,6 +1,7 @@
 // https://console.firebase.google.com/u/0/project/final-project-vue/database/final-project-vue/data/data
 
 <template>
+    <v-container>
             <v-img
               src="@/images/Login-background.jpg">
 
@@ -24,6 +25,7 @@
             </v-row>
              
             </v-img>
+    </v-container>
 </template>
 
 <script>
@@ -33,7 +35,8 @@
             user: {
                 username: '',
                 email: ''
-            }
+            },
+            users: []
          };
      },
      methods: {
