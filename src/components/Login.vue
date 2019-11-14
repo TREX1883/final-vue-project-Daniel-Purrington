@@ -2,8 +2,8 @@
 
 <template>
     <v-container>
-            <v-img
-              src="@/images/Login-background.jpg">
+            <!-- <v-img -->
+              <!-- src="@/images/Login-background.jpg"> -->
 
             <v-row>
                 <v-col class="center" align="center">
@@ -24,7 +24,7 @@
                 </v-col>
             </v-row>
              
-            </v-img>
+            <!-- </v-img> -->
     </v-container>
 </template>
 

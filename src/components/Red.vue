@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-row justify="space-around">
+    <!-- <v-row justify="space-around">
       <v-switch v-model="extended" class="mx-2" label="Extended"></v-switch>
       <v-switch v-model="extendedSlot" class="mx-2" label="Extension slot"></v-switch>
       <v-switch v-model="prominent" class="mx-2" label="Prominent"></v-switch>
@@ -11,7 +11,7 @@
       <v-col cols="12">
         <v-slider v-model="extensionHeight" label="Extension height" min="600" max="600"></v-slider>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <v-toolbar
       :extended="extended"
@@ -22,13 +22,13 @@
       :src="bg ? 'https://images2.alphacoders.com/571/571767.jpg' : undefined"
       :extension-height="extensionHeight"
     >
-      <template v-if="extendedSlot" #extension>
+      <!-- <template v-if="extendedSlot" #extension>
         <v-toolbar-items>
           <v-btn text>Link 1</v-btn>
           <v-btn text>Link 2</v-btn>
           <v-btn text>Link 3</v-btn>
         </v-toolbar-items>
-      </template>
+      </template> -->
 
       <v-toolbar-title>The Magic Gatherings</v-toolbar-title>
 

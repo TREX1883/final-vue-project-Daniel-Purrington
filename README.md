@@ -29,3 +29,6 @@ Grid System Playground - Useful to make content cleaner
 
 https://vuetifyjs.com/en/components/toolbars
 Toolbars - In the playground and click on Background - Get the idea how those link buttons are over the image.
+
+https://codepen.io/tahazsh/pen/KrYwQb
+image input comonent to preview images
