@@ -31,4 +31,7 @@ https://vuetifyjs.com/en/components/toolbars
 Toolbars - In the playground and click on Background - Get the idea how those link buttons are over the image.
 
 https://codepen.io/tahazsh/pen/KrYwQb
-image input comonent to preview images
+image input component to preview images
+
+https://codepen.io/Ov3rwatch/pen/wFiqE
+full background image with screen on top

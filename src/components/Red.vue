@@ -30,8 +30,10 @@
         </v-toolbar-items>
       </template> -->
 
-      <v-toolbar-title>The Magic Gatherings</v-toolbar-title>
-
+      <!-- <v-toolbar-title></v-toolbar-title> -->
+        <a href="#">
+          <img class="logo" src="https://www.digiseller.ru/preview/785842/p1_2494967_bfb21e5b.jpg" height="60"/>
+        </a>
       <v-spacer></v-spacer>
 
       <v-toolbar-items class="white">
@@ -53,17 +55,20 @@
       </template> -->
     </v-toolbar>
   </div>
+
+
+  
 </template>
 
 <script>
 export default {
     data: () => ({
       extended: true,
-      extendedSlot: false,
-      prominent: false,
+    //   extendedSlot: false,
+    //   prominent: false,
       dense: true,
-      collapse: false,
-      flat: false,
+    //   collapse: false,
+    //   flat: false,
       bg: true,
       extensionHeight: 700,
     }),

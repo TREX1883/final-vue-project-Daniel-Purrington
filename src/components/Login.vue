@@ -7,11 +7,13 @@
 
             <v-row>
                 <v-col class="center" align="center">
+                    <br>
+                    <br>
                     <div class="form-group">
                    <label>UserName</label>
                    <input type="text" class="form-control-2" v-model="user.username">
-               </div>
-                <div class="form-group">
+                    </div>
+                    <div class="form-group">
                    <label>E-mail</label>
                    <input type="text" class="form-control-2" v-model="user.email">
                </div>
@@ -68,7 +70,8 @@
 
 <style scoped>
     .center {
-        margin: 250px 0px 0px 0px;
+        margin: 225px 0px;
+        /* background-size: cover; */
     }
     .form-control-2 {
         margin: 6px;
@@ -80,5 +83,17 @@
     }
     .submit {
         opacity: .8;
+    }
+    .container {
+    color: white;
+    /* background-color: black; */
+    /* width: 100%; */
+    height: 100%;
+    background-image:url(https://images2.alphacoders.com/571/571767.jpg);
+    background-size: cover;
+    /* background-attachment:fixed; */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* color: white; */
     }
 </style>
