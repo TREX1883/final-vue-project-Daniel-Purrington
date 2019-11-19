@@ -1,33 +1,30 @@
 // https://console.firebase.google.com/u/0/project/final-project-vue/database/final-project-vue/data/data
 
 <template>
-    <v-container>
-            <!-- <v-img -->
-              <!-- src="@/images/Login-background.jpg"> -->
-
-            <v-row>
-                <v-col class="center" align="center">
-                    <br>
-                    <br>
-                    <div class="form-group">
-                   <label>UserName</label>
-                   <input type="text" class="form-control-2" v-model="user.username">
-                    </div>
-                    <div class="form-group">
-                   <label>E-mail</label>
-                   <input type="text" class="form-control-2" v-model="user.email">
-               </div>
-                    <v-btn class="submit" @click="submit">Submit</v-btn>
-                    <br>
-                    <v-btn class="submit" @click="getData">Get Data</v-btn>
-                        <ul>
-                            <li v-for="u in users" :key="u.user">{{ u.username }} - {{ u.email }}</li>
-                        </ul>
-                </v-col>
-            </v-row>
-             
-            <!-- </v-img> -->
-    </v-container>
+    <v-parallax 
+    src="https://i.pinimg.com/originals/79/44/9d/79449de3ab2d49756d54be57bdc8cede.jpg" 
+    height="650" >
+        <v-row>
+            <v-col class="center" align="center">
+                <br>
+                <br>
+                <div class="form-group">
+                    <label>UserName</label>
+                    <input type="text" class="form" v-model="user.username">
+                </div>
+                <div class="form-group">
+                    <label>E-mail</label>
+                    <input type="text" class="form" v-model="user.email">
+                </div>
+                <v-btn class="submit" @click="submit">Submit</v-btn>
+                <br>
+                <v-btn class="submit" @click="getData">Get Data</v-btn>
+                    <ul>
+                        <li style="list-style-type:none" v-for="u in users" :key="u.user">{{ u.username }} - {{ u.email }}</li>
+                    </ul>
+            </v-col>
+        </v-row>
+    </v-parallax>
 </template>
 
 <script>
@@ -71,29 +68,15 @@
 <style scoped>
     .center {
         margin: 225px 0px;
-        /* background-size: cover; */
     }
-    .form-control-2 {
+    .form {
         margin: 6px;
         background: white;
-        /* opacity: .3; */
         border-radius: 5px;
         width: 150px;
         border: 1px solid black;
     }
     .submit {
         opacity: .8;
-    }
-    .container {
-    color: white;
-    /* background-color: black; */
-    /* width: 100%; */
-    height: 100%;
-    background-image:url(https://images2.alphacoders.com/571/571767.jpg);
-    background-size: cover;
-    /* background-attachment:fixed; */
-    /* margin: 0; */
-    /* padding: 0; */
-    /* color: white; */
     }
 </style>
