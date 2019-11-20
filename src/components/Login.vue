@@ -1,6 +1,7 @@
 // https://console.firebase.google.com/u/0/project/final-project-vue/database/final-project-vue/data/data
 
 <template>
+<!-- <v-app> -->
     <v-parallax 
     src="https://i.pinimg.com/originals/79/44/9d/79449de3ab2d49756d54be57bdc8cede.jpg" 
     height="650" >
@@ -16,7 +17,9 @@
                     <label>E-mail</label>
                     <input type="text" class="form" v-model="user.email">
                 </div>
+                <br>
                 <v-btn class="submit" @click="submit">Submit</v-btn>
+                <br>
                 <br>
                 <v-btn class="submit" @click="getData">Get Data</v-btn>
                     <ul>
@@ -25,6 +28,7 @@
             </v-col>
         </v-row>
     </v-parallax>
+<!-- </v-app> -->
 </template>
 
 <script>
@@ -35,21 +39,24 @@
                 username: '',
                 email: ''
             },
-            users: []
+            users: [],
+            // resource: {}
          };
      },
      methods: {
          submit() {
             // console.log(this.user);
-            this.$http.post('https://final-project-vue.firebaseio.com/data.json', this.user)
+            this.$http.post('', this.user)
                 // .then(response => {
                     // console.log(response);
                 // }, error => {
                     // console.log(error);
                 // });
+                // this.resource.save({}, this.user);
+                // this.resource.saveAlt(this.user);
          },
          getData() {
-             this.$http.get('https://final-project-vue.firebaseio.com/data.json')
+             this.$http.get('')
                 .then(response => {
                     return response.json();
                 })
@@ -61,7 +68,13 @@
                     this.users = resultArray;
                 });
          }
-     }
+         },
+        //  created() {
+        //      const customActions = {
+        //          saveAlt: {method: 'POST', url: 'alternative.json'}
+        //      };
+        //      this.resource = this.$resource('data.json', {}, customActions);
+    //  }
  }
 </script>
 
@@ -70,7 +83,9 @@
         margin: 225px 0px;
     }
     .form {
+        color: black;
         margin: 6px;
+        padding: 0px 4px;
         background: white;
         border-radius: 5px;
         width: 150px;
