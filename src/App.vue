@@ -12,6 +12,7 @@
       <v-toolbar-items>
         <v-btn class="menu" @click="selectedComponent = 'appLogin'" text>Login</v-btn>
         <v-btn class="menu" @click="selectedComponent = 'appTrading'" text>MTG Trading</v-btn>
+        <v-btn class="menu" @click="selectedComponent = 'appCards'" text>MTG API</v-btn>
         <v-btn class="menu" @click="selectedComponent = 'appBlue'" text>Blue</v-btn>
         <v-btn class="menu" @click="selectedComponent = 'appRed'" text>Red</v-btn>
       </v-toolbar-items>
@@ -29,9 +30,12 @@
 <script>
     import Login from './components/Login.vue';
     import Trading from './components/Trading.vue';
+    import Cards from './components/MagicList.vue';
     import Blue from './components/Blue.vue';
     import Red from './components/Red.vue';
     import Footer from './components/Footer.vue';
+    // import MagicGrid from './components/MagicGrid'
+    // import { mtgs } from './assets/MTG-api'
 
     export default {
         data: () => {
@@ -42,6 +46,7 @@
         components: {
             appLogin: Login,
             appTrading: Trading,
+            appCards: Cards,
             appBlue: Blue,
             appRed: Red,
             'app-footer': Footer
