@@ -8,7 +8,7 @@
 </template>
 
  <script>
-import MagicGrid from './components/MagicGrid'
+// import MagicGrid from './components/MagicGrid'
 // import { mtgs } from './assets/MTG-api'
 
 // export default {
