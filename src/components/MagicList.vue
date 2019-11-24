@@ -8,17 +8,17 @@
 </template>
 
  <script>
-// import MagicGrid from './components/MagicGrid'
-// import { mtgs } from './assets/MTG-api'
+import MagicGrid from './MagicGrid.vue'
+import { mtgs } from './MTG-api.js'
 
-// export default {
-//   components: {
-//     'magic-grid': MagicGrid,
-//   },
-//   data: () => {
-//     return {
-//       mtgs
-//     }
-//   },
-// };
+export default {
+  components: {
+    'magic-grid': MagicGrid,
+  },
+  data: () => {
+    return {
+      mtgs
+    }
+  },
+};
 </script>
