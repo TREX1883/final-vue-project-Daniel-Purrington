@@ -12,6 +12,8 @@
                     <!-- {{ mtg.imageUrl }}  -->
                     <v-img :src="mtg.imageUrl"></v-img>
                 </div>
+                <div><h3> {{ mtg.rarity }} </h3></div>
+                <div><h3> {{ mtg.setName }} </h3></div>
             </div>
         </v-card-title>    
         <v-card-actions>
