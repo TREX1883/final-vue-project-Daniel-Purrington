@@ -3,7 +3,7 @@
         <v-card-title>
             <div>
                 <!-- <h1>Test</h1> -->
-                <h3> {{ mtg.name }} </h3>
+                <!-- <h3> {{ mtg.name }} </h3> -->
                 <div>
                     <!-- {{ mtg.colors[0] }}  add [0] to remove [] from website -->
                 </div>
@@ -13,12 +13,12 @@
                     <v-img :src="mtg.imageUrl"></v-img>
                 </div>
                 <div><h3> {{ mtg.rarity }} </h3></div>
-                <div><h3> {{ mtg.setName }} </h3></div>
+                <!-- <div><h3> {{ mtg.setName }} </h3></div> -->
             </div>
         </v-card-title>    
-        <v-card-actions>
+        <!-- <v-card-actions> -->
 
-        </v-card-actions>
+        <!-- </v-card-actions> -->
     </v-card>
 </template>
 

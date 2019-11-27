@@ -1,7 +1,7 @@
-<template>
+<template class="container">
   <v-app>
     <v-content>
-      <h1>Testing display</h1>
+      <!-- <h1>Testing display</h1> -->
       <magic-grid :mtgs="mtgs"></magic-grid>
     </v-content>
   </v-app>
@@ -22,3 +22,9 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.container {
+  background-color: black;
+}
+</style>

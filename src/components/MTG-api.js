@@ -929,76 +929,6 @@ export const mtgs = [
         id: "2854f284-974b-5842-8748-7c300e825b6c"
       },
       {
-        name: "Air Elemental",
-        manaCost: "{3}{U}{U}",
-        cmc: 5.0,
-        colors: ["Blue"],
-        colorIdentity: ["U"],
-        type: "Creature — Elemental",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Elemental"],
-        rarity: "Uncommon",
-        set: "10E",
-        setName: "Tenth Edition",
-        text: "Flying",
-        flavor:
-          '"The East Wind, an interloper in the dominions of Westerly Weather, is an impassive-faced tyrant with a sharp poniard held behind his back for a treacherous stab."\n—Joseph Conrad, The Mirror of the Sea',
-        artist: "Kev Walker",
-        number: "64★",
-        power: "4",
-        toughness: "4",
-        layout: "normal",
-        variations: ["2854f284-974b-5842-8748-7c300e825b6c"],
-        rulings: [],
-        foreignNames: [],
-        printings: [
-          "10E",
-          "2ED",
-          "3ED",
-          "4BB",
-          "4ED",
-          "5ED",
-          "6ED",
-          "7ED",
-          "8ED",
-          "9ED",
-          "BRB",
-          "BTD",
-          "CED",
-          "CEI",
-          "DD2",
-          "DPA",
-          "FBB",
-          "GNT",
-          "JVC",
-          "LEA",
-          "LEB",
-          "M10",
-          "M19",
-          "M20",
-          "ME4",
-          "P02",
-          "PS11",
-          "S99",
-          "SUM",
-          "W17",
-          "XLN"
-        ],
-        legalities: [
-          { format: "Brawl", legality: "Legal" },
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Future", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Standard", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "9d9ce25a-f48a-5b21-a672-8a08d42350e5"
-      },
-      {
         name: "Ambassador Laquatus",
         manaCost: "{1}{U}{U}",
         cmc: 3.0,
@@ -1257,43 +1187,6 @@ export const mtgs = [
         id: "fe4aa077-872f-58b2-bc37-80164f869895"
       },
       {
-        name: "Anaba Bodyguard",
-        manaCost: "{3}{R}",
-        cmc: 4.0,
-        colors: ["Red"],
-        colorIdentity: ["R"],
-        type: "Creature — Minotaur",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Minotaur"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "First strike (This creature deals combat damage before creatures without first strike.)",
-        flavor:
-          '"They who challenge a minotaur enjoy the taste of their own blood." —Mirri of the Weatherlight',
-        artist: "Greg Staples",
-        number: "187★",
-        power: "2",
-        toughness: "3",
-        layout: "normal",
-        variations: ["fe4aa077-872f-58b2-bc37-80164f869895"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "6ED", "HML"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "067159f1-c2be-5ed1-916b-e7645682c334"
-      },
-      {
         name: "Ancestor's Chosen",
         manaCost: "{5}{W}{W}",
         cmc: 7.0,
@@ -1414,41 +1307,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "ad41be73-582f-58ed-abd4-a88c1f616ac3"
-      },
-      {
-        name: "Ancestor's Chosen",
-        manaCost: "{5}{W}{W}",
-        cmc: 7.0,
-        colors: ["White"],
-        colorIdentity: ["W"],
-        type: "Creature — Human Cleric",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Human", "Cleric"],
-        rarity: "Uncommon",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "First strike (This creature deals combat damage before creatures without first strike.)\nWhen Ancestor's Chosen enters the battlefield, you gain 1 life for each card in your graveyard.",
-        flavor: '"The will of all, by my hand done."',
-        artist: "Pete Venters",
-        number: "1★",
-        power: "4",
-        toughness: "4",
-        layout: "normal",
-        variations: ["ad41be73-582f-58ed-abd4-a88c1f616ac3"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "JUD", "UMA"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "fcd5d3ab-d58e-5cea-861a-cb377f37bf83"
       },
       {
         name: "Angel of Mercy",
@@ -1584,54 +1442,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "9eb2e54c-a12b-5e88-a9c0-d8c84c52d59c"
-      },
-      {
-        name: "Angel of Mercy",
-        manaCost: "{4}{W}",
-        cmc: 5.0,
-        colors: ["White"],
-        colorIdentity: ["W"],
-        type: "Creature — Angel",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Angel"],
-        rarity: "Uncommon",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flying\nWhen Angel of Mercy enters the battlefield, you gain 3 life.",
-        flavor: "Every tear shed is a drop of immortality.",
-        artist: "Volkan Baǵa",
-        number: "2★",
-        power: "3",
-        toughness: "3",
-        layout: "normal",
-        variations: ["9eb2e54c-a12b-5e88-a9c0-d8c84c52d59c"],
-        rulings: [],
-        foreignNames: [],
-        printings: [
-          "10E",
-          "8ED",
-          "9ED",
-          "DDC",
-          "DVD",
-          "IMA",
-          "INV",
-          "P02",
-          "PS11",
-          "PSAL",
-          "S99"
-        ],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "e2be2630-ada5-57c7-8612-0356dfa75ce5"
       },
       {
         name: "Angel's Feather",
@@ -1918,51 +1728,6 @@ export const mtgs = [
         id: "8fb2ccd5-774d-5856-998e-6031e2a63c6a"
       },
       {
-        name: "Angelic Blessing",
-        manaCost: "{2}{W}",
-        cmc: 3.0,
-        colors: ["White"],
-        colorIdentity: ["W"],
-        type: "Sorcery",
-        supertypes: [],
-        types: ["Sorcery"],
-        subtypes: [],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Target creature gets +3/+3 and gains flying until end of turn. (It can't be blocked except by creatures with flying or reach.)",
-        flavor:
-          "Only the warrior who can admit mortal weakness will be bolstered by immortal strength.",
-        artist: "Mark Zug",
-        number: "3★",
-        layout: "normal",
-        variations: ["8fb2ccd5-774d-5856-998e-6031e2a63c6a"],
-        rulings: [],
-        foreignNames: [],
-        printings: [
-          "10E",
-          "9ED",
-          "EXO",
-          "P02",
-          "POR",
-          "PS11",
-          "S00",
-          "S99",
-          "TPR"
-        ],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "53438513-19d4-5bf1-90df-90fcbddbb60d"
-      },
-      {
         name: "Angelic Chorus",
         manaCost: "{3}{W}{W}",
         cmc: 5.0,
@@ -2223,42 +1988,6 @@ export const mtgs = [
         id: "cff007ed-d371-5591-9228-a3280de53075"
       },
       {
-        name: "Angelic Wall",
-        manaCost: "{1}{W}",
-        cmc: 2.0,
-        colors: ["White"],
-        colorIdentity: ["W"],
-        type: "Creature — Wall",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Wall"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text: "Defender (This creature can't attack.)\nFlying",
-        flavor:
-          '"The Ancestor protects us in ways we can\'t begin to comprehend." —Mystic elder',
-        artist: "John Avon",
-        number: "5★",
-        power: "0",
-        toughness: "4",
-        layout: "normal",
-        variations: ["cff007ed-d371-5591-9228-a3280de53075"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "AVR", "M14", "ODY", "P02"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "873ea568-3c77-59fd-8125-5da2de48f0d2"
-      },
-      {
         name: "Arcane Teachings",
         manaCost: "{2}{R}",
         cmc: 3.0,
@@ -2377,40 +2106,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "84304c11-af1d-5cf1-9a19-b8c63def257a"
-      },
-      {
-        name: "Arcane Teachings",
-        manaCost: "{2}{R}",
-        cmc: 3.0,
-        colors: ["Red"],
-        colorIdentity: ["R"],
-        type: "Enchantment — Aura",
-        supertypes: [],
-        types: ["Enchantment"],
-        subtypes: ["Aura"],
-        rarity: "Uncommon",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          'Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)\nEnchanted creature gets +2/+2 and has "{T}: This creature deals 1 damage to any target."',
-        flavor: "Not all knowledge is learned from parchment.",
-        artist: "Dan Dos Santos",
-        number: "188★",
-        layout: "normal",
-        variations: ["84304c11-af1d-5cf1-9a19-b8c63def257a"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "JUD"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "7ab77d62-5ec3-5a5a-9c7c-6ddc5281b273"
       },
       {
         name: "Arcanis the Omnipotent",
@@ -2683,48 +2378,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "db6218d8-04ed-52c6-9ea9-2a3d763eaba1"
-      },
-      {
-        name: "Ascendant Evincar",
-        manaCost: "{4}{B}{B}",
-        cmc: 6.0,
-        colors: ["Black"],
-        colorIdentity: ["B"],
-        type: "Legendary Creature — Vampire",
-        supertypes: ["Legendary"],
-        types: ["Creature"],
-        subtypes: ["Vampire"],
-        rarity: "Rare",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flying (This creature can't be blocked except by creatures with flying or reach.)\nOther black creatures get +1/+1.\nNonblack creatures get -1/-1.",
-        flavor:
-          "His soul snared by an angel's curse, Crovax twisted heroism into its purest shadow.",
-        artist: "Mark Zug",
-        number: "127★",
-        power: "3",
-        toughness: "3",
-        layout: "normal",
-        variations: ["db6218d8-04ed-52c6-9ea9-2a3d763eaba1"],
-        rulings: [
-          {
-            date: "2007-07-15",
-            text:
-              "If Ascendant Evincar stops being black, it gives itself -1/-1."
-          }
-        ],
-        foreignNames: [],
-        printings: ["10E", "DPA", "HOP", "NEM", "PMEI", "PS11"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "f2d8870e-3ac7-550c-9f80-742b19735a38"
       },
       {
         name: "Assassinate",
@@ -3244,47 +2897,6 @@ export const mtgs = [
         id: "b20b6ef2-c8f9-5810-9b7f-af4e7d207fe7"
       },
       {
-        name: "Avatar of Might",
-        manaCost: "{6}{G}{G}",
-        cmc: 8.0,
-        colors: ["Green"],
-        colorIdentity: ["G"],
-        type: "Creature — Avatar",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Avatar"],
-        rarity: "Rare",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "If an opponent controls at least four more creatures than you, this spell costs {6} less to cast.\nTrample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)",
-        flavor:
-          "In their most desperate hour, the elves of Llanowar had one song left to sing.",
-        artist: "rk post",
-        number: "251★",
-        power: "8",
-        toughness: "8",
-        layout: "normal",
-        variations: ["b20b6ef2-c8f9-5810-9b7f-af4e7d207fe7"],
-        rulings: [
-          {
-            date: "2004-10-04",
-            text:
-              "The converted mana cost of this card is still 8, even if you only pay {G}{G} to cast it."
-          }
-        ],
-        foreignNames: [],
-        printings: ["10E", "PCY"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "df16eb18-b130-597d-b0b7-bdfdde32e86f"
-      },
-      {
         name: "Aven Cloudchaser",
         manaCost: "{3}{W}",
         cmc: 4.0,
@@ -3413,43 +3025,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "c0de6fd8-367a-50fb-b2f4-2b8fa5aeb7d9"
-      },
-      {
-        name: "Aven Cloudchaser",
-        manaCost: "{3}{W}",
-        cmc: 4.0,
-        colors: ["White"],
-        colorIdentity: ["W"],
-        type: "Creature — Bird Soldier",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Bird", "Soldier"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhen Aven Cloudchaser enters the battlefield, destroy target enchantment.",
-        flavor:
-          '"At the Reapportionment, Eagle begged to be human. The Ancestor granted half that prayer." —Nomad myth',
-        artist: "Justin Sweet",
-        number: "7★",
-        power: "2",
-        toughness: "2",
-        layout: "normal",
-        variations: ["c0de6fd8-367a-50fb-b2f4-2b8fa5aeb7d9"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "8ED", "9ED", "ODY"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "2dd39d0e-5e6f-5a74-978b-7ef67ffa8b73"
       },
       {
         name: "Aven Fisher",
@@ -3583,43 +3158,6 @@ export const mtgs = [
         id: "aea807be-9b29-53fa-9665-b00b62d5dced"
       },
       {
-        name: "Aven Fisher",
-        manaCost: "{3}{U}",
-        cmc: 4.0,
-        colors: ["Blue"],
-        colorIdentity: ["U"],
-        type: "Creature — Bird Soldier",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Bird", "Soldier"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhen Aven Fisher dies, you may draw a card.",
-        flavor:
-          "The same spears that catch their food today will defend their homes tomorrow.",
-        artist: "Christopher Moeller",
-        number: "68★",
-        power: "2",
-        toughness: "2",
-        layout: "normal",
-        variations: ["aea807be-9b29-53fa-9665-b00b62d5dced"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "8ED", "9ED", "ODY"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "ab49e18a-634e-55a4-8aff-8bdd4e5e4a57"
-      },
-      {
         name: "Aven Windreader",
         manaCost: "{3}{U}{U}",
         cmc: 5.0,
@@ -3748,42 +3286,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "4ab8c1bf-a3f4-5b65-9768-ca3c1a2e7748"
-      },
-      {
-        name: "Aven Windreader",
-        manaCost: "{3}{U}{U}",
-        cmc: 5.0,
-        colors: ["Blue"],
-        colorIdentity: ["U"],
-        type: "Creature — Bird Soldier Wizard",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Bird", "Soldier", "Wizard"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flying (This creature can't be blocked except by creatures with flying or reach.)\n{1}{U}: Target player reveals the top card of their library.",
-        flavor: '"The tiniest ripple tells a story ten fathoms deep."',
-        artist: "Greg Hildebrandt",
-        number: "69★",
-        power: "3",
-        toughness: "3",
-        layout: "normal",
-        variations: ["4ab8c1bf-a3f4-5b65-9768-ca3c1a2e7748"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "9ED", "ODY", "PSAL"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "cd4f2e38-bfbb-5172-99c0-aa0b9dfa6e9e"
       },
       {
         name: "Ballista Squad",
@@ -4708,43 +4210,6 @@ export const mtgs = [
         id: "1c5f900e-982d-5c65-89fd-46dd4db76716"
       },
       {
-        name: "Benalish Knight",
-        manaCost: "{2}{W}",
-        cmc: 3.0,
-        colors: ["White"],
-        colorIdentity: ["W"],
-        type: "Creature — Human Knight",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Human", "Knight"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flash (You may cast this spell any time you could cast an instant.)\nFirst strike (This creature deals combat damage before creatures without first strike.)",
-        flavor:
-          "\"We called them 'armored lightning.'\" —Gerrard of the Weatherlight",
-        artist: "Zoltan Boros & Gabor Szikszai",
-        number: "11★",
-        power: "2",
-        toughness: "2",
-        layout: "normal",
-        variations: ["1c5f900e-982d-5c65-89fd-46dd4db76716"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "ATH", "WTH"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "50eac642-2fda-5f35-a5fc-6f6e10c3ee85"
-      },
-      {
         name: "Birds of Paradise",
         manaCost: "{G}",
         cmc: 1.0,
@@ -4893,67 +4358,6 @@ export const mtgs = [
         id: "df15d202-901b-5a81-aa21-0e33f487838c"
       },
       {
-        name: "Birds of Paradise",
-        manaCost: "{G}",
-        cmc: 1.0,
-        colors: ["Green"],
-        colorIdentity: ["G"],
-        type: "Creature — Bird",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Bird"],
-        rarity: "Rare",
-        set: "10E",
-        setName: "Tenth Edition",
-        text: "Flying\n{T}: Add one mana of any color.",
-        artist: "Marcelo Vignali",
-        number: "252★",
-        power: "0",
-        toughness: "1",
-        layout: "normal",
-        variations: ["df15d202-901b-5a81-aa21-0e33f487838c"],
-        rulings: [],
-        foreignNames: [],
-        printings: [
-          "10E",
-          "2ED",
-          "3ED",
-          "4BB",
-          "4ED",
-          "5ED",
-          "6ED",
-          "7ED",
-          "8ED",
-          "CED",
-          "CEI",
-          "CN2",
-          "FBB",
-          "GK2",
-          "LEA",
-          "LEB",
-          "M10",
-          "M11",
-          "M12",
-          "PM11",
-          "PRM",
-          "PTC",
-          "RAV",
-          "SUM",
-          "WC00",
-          "WC01",
-          "WC02",
-          "WC98"
-        ],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "0c9b510b-6472-5339-bd6f-18cecc2e5482"
-      },
-      {
         name: "Blanchwood Armor",
         manaCost: "{2}{G}",
         cmc: 3.0,
@@ -5081,42 +4485,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "fd9bed0d-36da-5ae0-b9cd-6ce7c302056e"
-      },
-      {
-        name: "Blanchwood Armor",
-        manaCost: "{2}{G}",
-        cmc: 3.0,
-        colors: ["Green"],
-        colorIdentity: ["G"],
-        type: "Enchantment — Aura",
-        supertypes: [],
-        types: ["Enchantment"],
-        subtypes: ["Aura"],
-        rarity: "Uncommon",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Enchant creature\nEnchanted creature gets +1/+1 for each Forest you control.",
-        flavor:
-          '"Before armor, there was bark. Before blades, there were thorns." —Molimo, maro-sorcerer',
-        artist: "Paolo Parente",
-        number: "253★",
-        layout: "normal",
-        variations: ["fd9bed0d-36da-5ae0-b9cd-6ce7c302056e"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "7ED", "8ED", "9ED", "DPA", "M19", "PS11", "USG"],
-        legalities: [
-          { format: "Brawl", legality: "Legal" },
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Standard", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "f05509a3-b72c-5ceb-94e5-1f3c250db56b"
       },
       {
         name: "Blaze",
@@ -5650,64 +5018,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "1f36fc8b-d32a-5683-9bfa-6f02f7fdba84"
-      },
-      {
-        name: "Bog Wraith",
-        manaCost: "{3}{B}",
-        cmc: 4.0,
-        colors: ["Black"],
-        colorIdentity: ["B"],
-        type: "Creature — Wraith",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Wraith"],
-        rarity: "Uncommon",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Swampwalk (This creature can't be blocked as long as defending player controls a Swamp.)",
-        flavor:
-          "Knowing Takenuma Swamp to be dangerous, Hisata set wards to warn him of predators. He never imagined that his murderer would pass through them unhindered.",
-        artist: "Daarken",
-        number: "130★",
-        power: "3",
-        toughness: "3",
-        layout: "normal",
-        variations: ["1f36fc8b-d32a-5683-9bfa-6f02f7fdba84"],
-        rulings: [],
-        foreignNames: [],
-        printings: [
-          "10E",
-          "2ED",
-          "3ED",
-          "4BB",
-          "4ED",
-          "5ED",
-          "6ED",
-          "7ED",
-          "8ED",
-          "9ED",
-          "CED",
-          "CEI",
-          "FBB",
-          "ITP",
-          "LEA",
-          "LEB",
-          "M10",
-          "POR",
-          "RQS",
-          "S99",
-          "SUM"
-        ],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "4b6294e9-28db-5e4a-9d5d-4d4aeff037a3"
       },
       {
         name: "Bogardan Firefiend",
@@ -6505,51 +5815,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "717d33e3-2344-519d-af37-3e216c46d3f4"
-      },
-      {
-        name: "Canopy Spider",
-        manaCost: "{1}{G}",
-        cmc: 2.0,
-        colors: ["Green"],
-        colorIdentity: ["G"],
-        type: "Creature — Spider",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Spider"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text: "Reach (This creature can block creatures with flying.)",
-        flavor:
-          "It keeps the upper reaches of the forest free of every menace . . . except for the spider itself.",
-        artist: "Christopher Rush",
-        number: "254★",
-        power: "1",
-        toughness: "3",
-        layout: "normal",
-        variations: ["717d33e3-2344-519d-af37-3e216c46d3f4"],
-        rulings: [
-          {
-            date: "2008-04-01",
-            text:
-              "This card now uses the Reach keyword ability to enable the blocking of flying creatures. This works because a creature with flying can only be blocked by creatures with flying or reach."
-          }
-        ],
-        foreignNames: [],
-        printings: ["10E", "7ED", "8ED", "ATH", "BBD", "M20", "TMP", "TPR"],
-        legalities: [
-          { format: "Brawl", legality: "Legal" },
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Future", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Standard", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "3637154c-6924-5072-bd32-36d1e32ee11a"
       },
       {
         name: "Caves of Koilos",
@@ -7755,42 +7020,6 @@ export const mtgs = [
         id: "ac0bc104-7986-5eb4-b6c9-375120468c17"
       },
       {
-        name: "Cloud Elemental",
-        manaCost: "{2}{U}",
-        cmc: 3.0,
-        colors: ["Blue"],
-        colorIdentity: ["U"],
-        type: "Creature — Elemental",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Elemental"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text: "Flying\nCloud Elemental can block only creatures with flying.",
-        flavor:
-          "The soratami surround their sky-castles with living clouds that serve as both sword and shield.",
-        artist: "Michael Sutfin",
-        number: "74★",
-        power: "2",
-        toughness: "3",
-        layout: "normal",
-        variations: ["ac0bc104-7986-5eb4-b6c9-375120468c17"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "BTD", "M11", "MM2", "VIS", "WC97"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "4107aaeb-a96c-54ce-8042-08aa27f1f72e"
-      },
-      {
         name: "Cloud Sprite",
         manaCost: "{U}",
         cmc: 1.0,
@@ -7921,43 +7150,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "807c3d5b-7fdc-5f9a-910d-20d6d1fbbe1a"
-      },
-      {
-        name: "Cloud Sprite",
-        manaCost: "{U}",
-        cmc: 1.0,
-        colors: ["Blue"],
-        colorIdentity: ["U"],
-        type: "Creature — Faerie",
-        supertypes: [],
-        types: ["Creature"],
-        subtypes: ["Faerie"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Flying (This creature can't be blocked except by creatures with flying or reach.)\nCloud Sprite can block only creatures with flying.",
-        flavor:
-          "The delicate sprites carry messages for Saprazzans, but they refuse to land in Mercadia City's filthy markets.",
-        artist: "Mark Zug",
-        number: "75★",
-        power: "1",
-        toughness: "1",
-        layout: "normal",
-        variations: ["807c3d5b-7fdc-5f9a-910d-20d6d1fbbe1a"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "DPA", "MMQ", "PS11"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "7a81542e-9153-5416-84f0-a45d01e2935d"
       },
       {
         name: "Coat of Arms",
@@ -8110,67 +7302,6 @@ export const mtgs = [
         id: "908534a1-b3cd-5fad-b716-9a0e4a6d1d5f"
       },
       {
-        name: "Coat of Arms",
-        manaCost: "{5}",
-        cmc: 5.0,
-        colors: [],
-        colorIdentity: [],
-        type: "Artifact",
-        supertypes: [],
-        types: ["Artifact"],
-        subtypes: [],
-        rarity: "Rare",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Each creature gets +1/+1 for each other creature on the battlefield that shares at least one creature type with it. (For example, if two Goblin Warriors and a Goblin Shaman are on the battlefield, each gets +2/+2.)",
-        flavor: '"Hup, two, three, four, Dunno how to count no more."',
-        artist: "Scott M. Fischer",
-        number: "316★",
-        layout: "normal",
-        variations: ["908534a1-b3cd-5fad-b716-9a0e4a6d1d5f"],
-        rulings: [
-          {
-            date: "2004-10-04",
-            text:
-              "If a creature has more than one creature type, and one of those types matches the creature you are calculating for, then count that creature. Only one type needs to match in order to get counted."
-          },
-          {
-            date: "2004-10-04",
-            text:
-              "If you have a creature with more than one creature type, count all creatures which have either creature type."
-          },
-          {
-            date: "2009-10-01",
-            text:
-              "Sharing multiple creature types doesn’t give an additional bonus. Coat of Arms counts creatures, not creature types."
-          }
-        ],
-        foreignNames: [],
-        printings: [
-          "10E",
-          "7ED",
-          "8ED",
-          "9ED",
-          "DDS",
-          "DPA",
-          "EXO",
-          "H09",
-          "M10",
-          "PS11",
-          "TPR"
-        ],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "bac95ded-e0ed-55a9-881b-5787fb4d7e57"
-      },
-      {
         name: "Colossus of Sardia",
         manaCost: "{9}",
         cmc: 9.0,
@@ -8303,48 +7434,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "a62ac877-9bb2-51b3-80e8-5768a52d0aa4"
-      },
-      {
-        name: "Colossus of Sardia",
-        manaCost: "{9}",
-        cmc: 9.0,
-        colors: [],
-        colorIdentity: [],
-        type: "Artifact Creature — Golem",
-        supertypes: [],
-        types: ["Artifact", "Creature"],
-        subtypes: ["Golem"],
-        rarity: "Rare",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Trample (This creature can deal excess combat damage to the player or planeswalker it's attacking.)\nColossus of Sardia doesn't untap during your untap step.\n{9}: Untap Colossus of Sardia. Activate this ability only during your upkeep.",
-        flavor:
-          "Buried under a thin layer of dirt, it was known for centuries as Mount Sardia.",
-        artist: "Greg Staples",
-        number: "317★",
-        power: "9",
-        toughness: "9",
-        layout: "normal",
-        variations: ["a62ac877-9bb2-51b3-80e8-5768a52d0aa4"],
-        rulings: [
-          {
-            date: "2008-05-01",
-            text:
-              "The ability that untaps it during your upkeep has been returned to an activated ability. There is no restriction on how many times it can be untapped during your upkeep with this ability."
-          }
-        ],
-        foreignNames: [],
-        printings: ["10E", "4BB", "4ED", "5ED", "ATQ", "ME4", "REN", "RIN"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "22cc2c35-c785-575c-b2d7-00477e7ec599"
       },
       {
         name: "Commune with Nature",
@@ -9152,41 +8241,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "c5393c68-2c74-523c-93a7-f4bd53f46faa"
-      },
-      {
-        name: "Contaminated Bond",
-        manaCost: "{1}{B}",
-        cmc: 2.0,
-        colors: ["Black"],
-        colorIdentity: ["B"],
-        type: "Enchantment — Aura",
-        supertypes: [],
-        types: ["Enchantment"],
-        subtypes: ["Aura"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)\nWhenever enchanted creature attacks or blocks, its controller loses 3 life.",
-        flavor:
-          '"My favorite curses are those that manifest slowly, blackening the soul in ways the victim cannot hope to understand." —Erissa, bog witch',
-        artist: "Thomas M. Baxa",
-        number: "132★",
-        layout: "normal",
-        variations: ["c5393c68-2c74-523c-93a7-f4bd53f46faa"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "9ED", "MRD"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "e0d8ae7a-f932-5b4b-b262-74ed78de4a7c"
       },
       {
         name: "Counsel of the Soratami",
@@ -10329,41 +9383,6 @@ export const mtgs = [
           { format: "Vintage", legality: "Legal" }
         ],
         id: "1cc1e203-89d1-5d70-866d-48002aa268fa"
-      },
-      {
-        name: "Dehydration",
-        manaCost: "{3}{U}",
-        cmc: 4.0,
-        colors: ["Blue"],
-        colorIdentity: ["U"],
-        type: "Enchantment — Aura",
-        supertypes: [],
-        types: ["Enchantment"],
-        subtypes: ["Aura"],
-        rarity: "Common",
-        set: "10E",
-        setName: "Tenth Edition",
-        text:
-          "Enchant creature (Target a creature as you cast this. This card enters the battlefield attached to that creature.)\nEnchanted creature doesn't untap during its controller's untap step.",
-        flavor:
-          "The viashino used the spell to dry foods for crossing the Great Desert. The Suq'Ata later discovered its use in war.",
-        artist: "Arnie Swekel",
-        number: "78★",
-        layout: "normal",
-        variations: ["1cc1e203-89d1-5d70-866d-48002aa268fa"],
-        rulings: [],
-        foreignNames: [],
-        printings: ["10E", "8ED", "9ED", "MMQ", "PSAL"],
-        legalities: [
-          { format: "Commander", legality: "Legal" },
-          { format: "Duel", legality: "Legal" },
-          { format: "Legacy", legality: "Legal" },
-          { format: "Modern", legality: "Legal" },
-          { format: "Pauper", legality: "Legal" },
-          { format: "Penny", legality: "Legal" },
-          { format: "Vintage", legality: "Legal" }
-        ],
-        id: "228b69a1-ddae-575c-82d7-75912a6d1fe1"
       },
       {
         name: "Deluge",
