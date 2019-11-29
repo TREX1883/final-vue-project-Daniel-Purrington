@@ -34,8 +34,6 @@
     import Blue from './components/Blue.vue';
     import Red from './components/Red.vue';
     import Footer from './components/Footer.vue';
-    // import MagicGrid from './components/MagicGrid'
-    // import { mtgs } from './assets/MTG-api'
 
     export default {
         data: () => {

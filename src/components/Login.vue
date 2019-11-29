@@ -1,7 +1,6 @@
 // https://console.firebase.google.com/u/0/project/final-project-vue/database/final-project-vue/data/data
 
 <template>
-<!-- <v-app> -->
     <v-parallax 
     src="https://i.pinimg.com/originals/79/44/9d/79449de3ab2d49756d54be57bdc8cede.jpg" 
     height="650" >
@@ -28,7 +27,6 @@
             </v-col>
         </v-row>
     </v-parallax>
-<!-- </v-app> -->
 </template>
 
 <script>

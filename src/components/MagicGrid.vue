@@ -1,6 +1,8 @@
 <template>
     <v-container>
-        <h1>Test from Magic Grid</h1>
+        <!-- <div> -->
+        <h1>Magic Cards for sale</h1>
+        <!-- </div> -->
         <v-row>
             <v-col cols="3" v-for="mtg in mtgs" :key="mtg.multiverseid">
                 <magic-cards :mtg="mtg"></magic-cards>
@@ -21,5 +23,9 @@ export default {
 </script>
 
 <style scoped>
+h1 {
+    text-align: center;
+    color: white;
+}
 
 </style>
