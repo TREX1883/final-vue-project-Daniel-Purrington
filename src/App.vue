@@ -34,6 +34,7 @@
     import Blue from './components/Blue.vue';
     import Red from './components/Red.vue';
     import Footer from './components/Footer.vue';
+    // import Test from './components/Test.vue';
 
     export default {
         data: () => {
@@ -47,6 +48,7 @@
             appCards: Cards,
             appBlue: Blue,
             appRed: Red,
+            // appTest: Test,
             'app-footer': Footer
         }
     }
