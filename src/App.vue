@@ -15,6 +15,7 @@
         <v-btn class="menu" @click="selectedComponent = 'appCards'" text>MTG API</v-btn>
         <v-btn class="menu" @click="selectedComponent = 'appBlue'" text>Blue</v-btn>
         <v-btn class="menu" @click="selectedComponent = 'appRed'" text>Red</v-btn>
+        <v-btn class="menu" @click="selectedComponent = 'appText'" text>Text</v-btn>
       </v-toolbar-items>
     </v-toolbar>
   </div>
