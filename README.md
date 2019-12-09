@@ -60,7 +60,7 @@ Vue.filter('currency', (value) => {
 ```javascript
 Vue.http.options.root = 'https://project-vue-65b6f.firebaseio.com/data.json';
 ```
-Home.vue
+[Home.vue](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/components/Home.vue)
 ```javascript
 <script>
 export default {
