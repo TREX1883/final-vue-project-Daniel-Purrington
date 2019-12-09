@@ -1,7 +1,7 @@
 # Vue.js Final Project with Vuetify
 
 ## Netlify Url Link
-(Final Project Vue.js)(https://zen-pare-491f91.netlify.com/)
+[Final Project Vue.js](https://zen-pare-491f91.netlify.com/)
 
 ## Effectively use conditional logic and JavaScript array methods to render large lists.
 
