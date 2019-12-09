@@ -28,36 +28,35 @@
 </template>
 
 <script>
- export default {
-     data() {
-         return {
+export default {
+    data() {
+        return {
             user: {
                 username: '',
                 email: ''
             },
             users: [],
             resource: {}
-         };
-     },
-     methods: {
-         submit() {
+        };
+    },
+    methods: {
+        submit() {
             this.$http.post('', this.user)
-         },
-         getData() {
-             this.$http.get('')
-                .then(response => {
-                    return response.json();
-                })
-                .then(data => {
-                    const resultArray = [];
-                    for (let key in data) {
-                        resultArray.push(data[key])
-                    }
-                    this.users = resultArray;
-                });
-         }
-         },
- }
+        },
+        getData() {
+            this.$http.get('')
+            .then(response => {
+                return response.json();
+            }) .then(data => {
+                const resultArray = [];
+                for (let key in data) {
+                    resultArray.push(data[key])
+                }
+                this.users = resultArray;
+            });
+        }
+        },
+    }
 </script>
 
 <style scoped>

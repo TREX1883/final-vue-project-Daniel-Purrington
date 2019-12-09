@@ -15,11 +15,8 @@ const router = new VueRouter({
   routes
 })
 
-
 Vue.config.productionTip = false;
-// Vue.http.options.root = 'https://final-project-vue.firebaseio.com/data.json';
 Vue.http.options.root = 'https://project-vue-65b6f.firebaseio.com/data.json';
-// https://project-vue-65b6f.firebaseio.com/
 // Vue.http.interceptors.push((request, next) => {
 //     if (request.method == 'POST') {
 //       request.method = 'PUT';
@@ -35,9 +32,3 @@ new Vue({
   store,
   render: h => h(App)
 }).$mount('#app')
-
-// export default new Vuetify({
-//   icons: {
-//     iconfont: 'mdi',
-//   },
-// });

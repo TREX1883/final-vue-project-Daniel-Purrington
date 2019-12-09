@@ -51,6 +51,45 @@
 
 ```
 ## Connect to a server using HTTP and display retrieved data (use vue-resource or Axios).
+main.js
+...javascript
+Vue.http.options.root = 'https://project-vue-65b6f.firebaseio.com/data.json';
+...
+Home.vue
+```javascript
+<script>
+export default {
+    data() {
+        return {
+            user: {
+                username: '',
+                email: ''
+            },
+            users: [],
+            resource: {}
+        };
+    },
+    methods: {
+        submit() {
+            this.$http.post('', this.user)
+        },
+        getData() {
+            this.$http.get('')
+            .then(response => {
+                return response.json();
+            }) .then(data => {
+                const resultArray = [];
+                for (let key in data) {
+                    resultArray.push(data[key])
+                }
+                this.users = resultArray;
+            });
+        }
+        },
+    }
+</script>
+```
+## Provide at least 3 different routes with navigation between them using vue-router.
 routes.js
 ```javascript
     import Home from './components/Home.vue';
@@ -66,11 +105,6 @@ routes.js
         { path: '/blue', component: Blue },
         { path: '/red', component: Red },
     ]
-```
-## Provide at least 3 different routes with navigation between them using vue-router.
-
-```javascript
-
 ```
 ## Manage your application's state using vuex.
 
