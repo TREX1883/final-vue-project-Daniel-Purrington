@@ -52,9 +52,9 @@
 ```
 ## Connect to a server using HTTP and display retrieved data (use vue-resource or Axios).
 main.js
-...javascript
+```javascript
 Vue.http.options.root = 'https://project-vue-65b6f.firebaseio.com/data.json';
-...
+```
 Home.vue
 ```javascript
 <script>
