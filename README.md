@@ -9,7 +9,7 @@
 
 ```
 ## Encapsulate your code as VueJS single-file components.
-
+[App.vue](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/App.vue)
 ```javascript
 <template>
     <v-app>
@@ -31,9 +31,12 @@
 [GitHub commits Final Project ](https://github.com/TREX1883.com/)
 
 ## Allow communication between components using props, custom events, or local store.
-
+[MagicCards.vue](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/components/MagicCards.vue)
+[MagicGrid.vue](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/components/MagicGrid.vue)
 ```javascript
-
+export default {
+    props: ["mtg"],
+}
 ```
 ## Present a form for user input that provides useful form validation and feedback.
 
@@ -41,9 +44,11 @@
 
 ```
 ## Create a custom directive and use it on at least one of your components.
-
+[main.js](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/main.js)
 ```javascript
-
+Vue.filter('currency', (value) => {
+  return '$' + value.toLocaleString()
+})
 ```
 ## Use a mix of animations and transitions to enhance some aspects of your project.
 
@@ -51,7 +56,7 @@
 
 ```
 ## Connect to a server using HTTP and display retrieved data (use vue-resource or Axios).
-main.js
+[main.js](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/main.js)
 ```javascript
 Vue.http.options.root = 'https://project-vue-65b6f.firebaseio.com/data.json';
 ```
@@ -90,7 +95,8 @@ export default {
 </script>
 ```
 ## Provide at least 3 different routes with navigation between them using vue-router.
-routes.js
+[routes.js](https://github.com/TREX1883/final-vue-project-Daniel-Purrington/blob/master/src/routes.js)
+
 ```javascript
     import Home from './components/Home.vue';
     import Forms from './components/Forms.vue';

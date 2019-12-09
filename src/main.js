@@ -6,13 +6,13 @@ import vuetify from './plugins/vuetify';
 import { store } from './store/store';
 import VueRouter from 'vue-router';
 import { routes } from './routes';
-// import Vuetify from 'vuetify/lib';
 
 Vue.use(VueRouter);
 Vue.use(VueResource);
 
 const router = new VueRouter({
-  routes
+  routes,
+  mode: 'history'
 })
 
 Vue.config.productionTip = false;
@@ -26,9 +26,16 @@ Vue.http.options.root = 'https://project-vue-65b6f.firebaseio.com/data.json';
 //     });
 // });
 
+Vue.filter('currency', (value) => {
+  return '$' + value.toLocaleString()
+})
+
 new Vue({
   vuetify,
   router: router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+
+// https://console.firebase.google.com/u/0/project/project-vue-65b6f/database/project-vue-65b6f/data
