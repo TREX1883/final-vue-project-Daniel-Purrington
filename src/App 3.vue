@@ -1,8 +1,7 @@
 <template>
     <v-app>
-        
+        <appNav></appNav>
             <v-content>
-                <appNav></appNav>
                 <router-view></router-view>
             <!-- <v-container> -->
                 <!-- <div>
@@ -34,36 +33,42 @@
 
 <script>
     
-    // import Login from './components/Login';
-    // import Trading from './components/Trading';
-    // import Cards from './components/MagicList';
-    // import Blue from './components/Blue';
-    // import Red from './components/Red';
-    import Nav from './components/Nav';
-    import Footer from './components/Footer';
-
+    import Login from './components/Login.vue';
+    import Trading from './components/Trading.vue';
+    import Cards from './components/MagicList.vue';
+    import Blue from './components/Blue.vue';
+    import Red from './components/Red.vue';
+    import Footer from './components/Footer.vue';
+    import Nav from './components/Nav.vue';
     // import Test from './components/Test.vue';
 
     export default {
         name: 'App',
         data: () => ({
-            // testArray: [],
-            // items: null,
+            testArray: [],
+            items: null,
         //   return {
         //       selectedComponent: 'appLogin',
         //   }
         }),
         components: ({
-            // 'appLogin': Login,
-            // 'appTrading': Trading,
-            // 'appCards': Cards,
-            // 'appBlue': Blue,
-            // 'appRed': Red,
+            'appLogin': Login,
+            'appTrading': Trading,
+            'appCards': Cards,
+            'appBlue': Blue,
+            'appRed': Red,
             // appTest: Test,
-            'appNav': Nav,
             'appFooter': Footer,
+            'appNav': Nav,
         }),
     };
 </script>
 
-
+<style scoped>
+    .menu {
+    color: white;
+    }
+    .btn {
+        color: red;
+    }
+</style>

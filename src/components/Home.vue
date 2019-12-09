@@ -17,7 +17,7 @@
                     <input type="text" class="form" v-model="user.email">
                 </div>
                 <br>
-                <v-btn class="submit" @click="submit">Submit</v-btn>
+                <v-btn class="submit" @click="submit" to="/cards">Submit</v-btn>
                 <br>
                 <br>
                 <v-btn class="submit" @click="getData">Get Data</v-btn>

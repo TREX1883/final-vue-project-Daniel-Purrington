@@ -47,7 +47,8 @@
 
 <style>
 .footer {
-    background-color: rgb(65, 63, 63);
+  background-color: black;
+    /* background-color: rgb(65, 63, 63); */
     color: red;
 }
 .subheading {
