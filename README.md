@@ -11,6 +11,15 @@
 ## Encapsulate your code as VueJS single-file components.
 
 ```javascript
+<template>
+    <v-app>
+        <v-content>
+            <appNav></appNav>
+            <router-view></router-view>
+        </v-content>
+        <appFooter></appFooter>
+    </v-app>
+</template>
 
 ```
 ## Work with the Vue-CLI to create and manage your project within a real development toolset.
@@ -19,10 +28,8 @@
 
 ```
 ## Properly use Git for your source version control with an established record of at least 4 days of commits each week from October 15th through December 6th.
+[GitHub commits Final Project ](https://github.com/TREX1883.com/)
 
-```javascript
-
-```
 ## Allow communication between components using props, custom events, or local store.
 
 ```javascript
@@ -44,9 +51,21 @@
 
 ```
 ## Connect to a server using HTTP and display retrieved data (use vue-resource or Axios).
-
+routes.js
 ```javascript
+    import Home from './components/Home.vue';
+    import Forms from './components/Forms.vue';
+    import Cards from './components/MagicList.vue';
+    import Blue from './components/Blue.vue';
+    import Red from './components/Red.vue';
 
+    export const routes = [
+        { path: '', component: Home },
+        { path: '/forms', component: Forms },
+        { path: '/cards', component: Cards },
+        { path: '/blue', component: Blue },
+        { path: '/red', component: Red },
+    ]
 ```
 ## Provide at least 3 different routes with navigation between them using vue-router.
 

@@ -1,14 +1,4 @@
 <template>
-  <!-- <div class="row">
-            <div class="col-xs-12">
-                <footer>
-                    <p>All Servers are managed here</p>
-                </footer>
-            </div>
-  </div>-->
-  <!-- <v-footer>
-      <v-row class="footer" justify="center">&copy; {{ new Date().getFullYear() }}</v-row>
-  </v-footer> -->
 
    <v-footer
     dark
@@ -19,13 +9,8 @@
       flat
       tile
     >
-
-
-
-
-
       <v-card-text class="footer py-2 white--text text-center">
-        {{ new Date().getFullYear() }} — <strong>MTG</strong>
+        {{ new Date().getMonth()+1 }} / {{ new Date().getDate() }} / {{ new Date().getFullYear() }} — <strong>MTG</strong>
       </v-card-text>
     </v-card>
   </v-footer>
@@ -50,6 +35,7 @@
   background-color: black;
     /* background-color: rgb(65, 63, 63); */
     color: red;
+    /* margin: 15px 0px; */
 }
 .subheading {
   color: red;

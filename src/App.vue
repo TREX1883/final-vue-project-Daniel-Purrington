@@ -1,48 +1,16 @@
 <template>
     <v-app>
-        
-            <v-content>
-                <appNav></appNav>
-                <router-view></router-view>
-            <!-- <v-container> -->
-                <!-- <div>
-                    <v-toolbar
-                    dense="dense"
-                    flat="flat"
-                    src="https://live.staticflickr.com/773/22509192186_cab0672437_b.jpg"
-                    > -->
-                    <!-- <v-spacer></v-spacer>
-                    <v-toolbar-items>
-                        <v-btn class="menu" @click="selectedComponent = 'appLogin'" text>Login</v-btn>
-                        <v-btn class="menu" @click="selectedComponent = 'appTrading'" text>MTG Trading</v-btn>
-                        <v-btn class="menu" @click="selectedComponent = 'appCards'" text>MTG API</v-btn>
-                        <v-btn class="menu" @click="selectedComponent = 'appBlue'" text>Blue</v-btn>
-                        <v-btn class="menu" @click="selectedComponent = 'appRed'" text>Red</v-btn>
-                        <v-btn class="menu" @click="selectedComponent = 'appTest'" text>Test</v-btn>
-                    </v-toolbar-items>
-                    </v-toolbar> -->
-                <!-- </div> -->
-            <!-- <component :is="selectedComponent">
-                <p>This is the Content</p>
-            </component> -->
-                
-            <!-- </v-container> -->
-            </v-content>
+        <v-content>
+            <appNav></appNav>
+            <router-view></router-view>
+        </v-content>
         <appFooter></appFooter>
     </v-app>
 </template>
 
 <script>
-    
-    // import Login from './components/Login';
-    // import Trading from './components/Trading';
-    // import Cards from './components/MagicList';
-    // import Blue from './components/Blue';
-    // import Red from './components/Red';
     import Nav from './components/Nav';
     import Footer from './components/Footer';
-
-    // import Test from './components/Test.vue';
 
     export default {
         name: 'App',
@@ -54,12 +22,6 @@
         //   }
         }),
         components: ({
-            // 'appLogin': Login,
-            // 'appTrading': Trading,
-            // 'appCards': Cards,
-            // 'appBlue': Blue,
-            // 'appRed': Red,
-            // appTest: Test,
             'appNav': Nav,
             'appFooter': Footer,
         }),
