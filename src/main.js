@@ -6,7 +6,9 @@ import vuetify from './plugins/vuetify';
 import { store } from './store/store';
 import VueRouter from 'vue-router';
 import { routes } from './routes';
+import Vuelidate from 'vuelidate'
 
+Vue.use(Vuelidate)
 Vue.use(VueRouter);
 Vue.use(VueResource);
 

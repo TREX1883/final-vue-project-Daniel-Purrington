@@ -1,185 +1,143 @@
 <template>
     <div class="container">
-        <form>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <h1>Buy / Sell your MTG cards</h1>
-                    <hr>
-                    <div class="form-group">
-                        <label for="email">E-mail</label>
-                        <input
-                                type="text"
-                                id="email"
-                                class="form-control"
-                                :value="userData.email"
-                                @input="userData.email = $event.target.value">
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input
-                                type="password"
-                                id="password"
-                                class="form-control"
-                                v-model.lazy="userData.password">
-                        <p>{{ userData.password }}</p>
-                    </div>
-                    <div class="form-group">
-                        <label for="age">Age</label>
-                        <input
-                                type="number"
-                                id="age"
-                                class="form-control"
-                                v-model="userData.age">
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 form-group">
-                    <label for="message">Message</label><br>
-                    <!-- Interpolation between <textarea>{{ test }}</textarea> doesn't work!-->
-                    <textarea
-                            id="message"
-                            rows="5"
-                            class="form-control"
-                            v-model="message"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <div class="form-group">
-                        <label for="sendmail">
-                            <input
-                                    type="checkbox"
-                                    id="sendmail"
-                                    value="SendMail"
-                                    v-model="sendMail"> Send Mail
-                        </label>
-                        <label for="sendInfomail">
-                            <input
-                                    type="checkbox"
-                                    id="sendInfomail"
-                                    value="SendInfoMail"
-                                    v-model="sendMail"> Send Infomail
-                        </label><!-- Also show for single checkbox with true/ false -->
-                    </div>
-
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 form-group">
-                    <label for="male">
-                        <input
-                                type="radio"
-                                id="male"
-                                value="Male"
-                                v-model="gender"> Male
-                    </label>
-                    <label for="female">
-                        <input
-                                type="radio"
-                                id="female"
-                                value="Female"
-                                v-model="gender"> Female
-                    </label>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 from-group">
-                    <label for="priority">Priority</label>
-                    <!-- <select
-                            id="priority"
-                            class="form-control"
-                            v-model="selectedPriority">
-                        <option v-for="priority in priorities"> {{ priority }}</option>
-                    </select> -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <app-switch v-model="dataSwitch"></app-switch>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <v-btn
-                            class="btn btn-primary"
-                            @click.prevent="submitted">Submit!
-                    </v-btn>
-                </div>
-            </div>
-        </form>
-        <hr>
-        <div class="row" v-if="isSubmitted">
-            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>Your Data</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>Mail: {{ userData.email }} </p>
-                        <p>Password: {{ userData.password }}</p>
-                        <p>Age: {{ userData.age }}</p>
-                        <p style="white-space: pre">Message: {{ message }}</p>
-                        <p><strong>Send Mail?</strong></p>
-                        <!-- <ul>
-                            <li v-for="item in sendMail">{{ item }}</li>
-                        </ul> -->
-                        <p>Gender:  {{ gender }}</p>
-                        <p>Priority: {{ selectedPriority }}</p>
-                        <p>Switched: {{ dataSwitch }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <form>
+      <v-text-field
+        v-model="name"
+        :error-messages="nameErrors"
+        :counter="25"
+        label="Username"
+        required
+        @input="$v.name.$touch()"
+        @blur="$v.name.$touch()"
+      ></v-text-field>
+        <v-text-field
+        v-model="pass"
+        :error-messages="passErrors"
+        :counter="25"
+        label="Password"
+        required
+        @input="$v.pass.$touch()"
+        @blur="$v.pass.$touch()"
+      ></v-text-field>
+      <v-text-field
+        v-model="email"
+        :error-messages="emailErrors"
+        label="E-mail"
+        required
+        @input="$v.email.$touch()"
+        @blur="$v.email.$touch()"
+      ></v-text-field>
+      <v-select
+        v-model="select"
+        :items="items"
+        :error-messages="selectErrors"
+        label="What's your favorite color in MTG cards?"
+        required
+        @change="$v.select.$touch()"
+        @blur="$v.select.$touch()"
+      ></v-select>
+      <v-checkbox
+        v-model="checkbox"
+        :error-messages="checkboxErrors"
+        label="Do you like Magic the Gatherings?"
+        required
+        @change="$v.checkbox.$touch()"
+        @blur="$v.checkbox.$touch()"
+      ></v-checkbox>
+  
+      <v-btn class="mr-4" @click="submit">submit</v-btn>
+      <v-btn @click="clear">clear</v-btn>
+    </form>
     </div>
 </template>
 
 <script>
-    import Switch from './Switch.vue';
+// import { validationMixin } from 'vuelidate'
+import { required, maxLength, email } from 'vuelidate/lib/validators'
 
     export default {
-        data () {
-            return {
-                userData: {
-                    email: '',
-                    password: '',
-                    age: ''
-                },
-                message: 'A new Text',
-                sendMail: [],
-                gender: 'Male',
-                selectedPriority: 'High',
-                priorities: ['High', 'Medium', 'Low'],
-                dataSwitch: true,
-                isSubmitted: false
-            }
-        },
-        methods: {
-          submitted() {
-              this.isSubmitted = true;
-          }
-        },
-        components: {
-            appSwitch: Switch
-        }
-    }
+    validations: {
+    name: { required, maxLength: maxLength(25) },
+    pass: { required, maxLength: maxLength(25) },
+    email: { required, email },
+    select: { required },
+    checkbox: {
+      checked (val) {
+        return val
+      },
+    },
+  },
+
+  data: () => ({
+    name: '',
+    pass: '',
+    email: '',
+    select: null,
+    items: [
+      'Red',
+      'Blue',
+      'Black',
+      'Green',
+      'White',
+    ],
+    checkbox: false,
+  }),
+
+  computed: {
+    checkboxErrors () {
+      const errors = []
+      if (!this.$v.checkbox.$dirty) return errors
+      !this.$v.checkbox.checked && errors.push('This is against the law!')
+      return errors
+    },
+    selectErrors () {
+      const errors = []
+      if (!this.$v.select.$dirty) return errors
+      !this.$v.select.required && errors.push('Pick one color is required')
+      return errors
+    },
+    nameErrors () {
+      const errors = []
+      if (!this.$v.name.$dirty) return errors
+      !this.$v.name.maxLength && errors.push('Username must be at most 25 characters long')
+      !this.$v.name.required && errors.push('Username is required.')
+      return errors
+    },
+    passErrors () {
+      const errors = []
+      if (!this.$v.pass.$dirty) return errors
+      !this.$v.pass.maxLength && errors.push('Password must be at most 25 characters long')
+      !this.$v.pass.required && errors.push('Password is required.')
+      return errors
+    },
+    emailErrors () {
+      const errors = []
+      if (!this.$v.email.$dirty) return errors
+      !this.$v.email.email && errors.push('Must be valid e-mail')
+      !this.$v.email.required && errors.push('E-mail is required')
+      return errors
+    },
+  },
+
+  methods: {
+    submit () {
+      this.$v.$touch()
+    },
+    clear () {
+      this.$v.$reset()
+      this.name = ''
+      this.pass = ''
+      this.email = ''
+      this.select = null
+      this.checkbox = false
+    },
+  }
+}
 </script>
 
 <style scoped>
-
 .container {
-    background-color: rgb(170, 168, 168);
-}
-.form-group {
-    margin: 7px;
-}
-input, textarea, v-btn{
-    margin: 0px 5px;
-    padding: 0px 5px;
-    background-color: white;
-    border: 1px solid black;
-    border-radius: 5px;
+    max-width: 600px;
+    padding: 50px 0px;
 }
 </style>

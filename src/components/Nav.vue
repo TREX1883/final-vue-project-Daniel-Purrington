@@ -8,7 +8,7 @@
             <v-toolbar-items>
             <v-btn to="/" class="menu">Home</v-btn>
             <v-btn to="/cards" class="menu">Cards</v-btn>
-            <v-btn to="/blue" class="menu">Test</v-btn>
+            <!-- <v-btn to="/blue" class="menu">Test</v-btn> -->
             <!-- <v-btn class="menu">Link 1</v-btn> -->
             <!-- <v-btn class="menu">Link 2</v-btn> -->
             <v-btn to="/forms" class="menu">Form</v-btn>
