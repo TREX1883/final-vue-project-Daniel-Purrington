@@ -12,6 +12,8 @@
             <!-- <v-btn class="menu">Link 1</v-btn> -->
             <!-- <v-btn class="menu">Link 2</v-btn> -->
             <v-btn to="/forms" class="menu">Form</v-btn>
+            <v-btn to="/crud" class="menu">CRUD</v-btn>
+            <v-btn to="/graphql" class="menu">GraphQL</v-btn>
             </v-toolbar-items>
         </v-toolbar>
     </div>
