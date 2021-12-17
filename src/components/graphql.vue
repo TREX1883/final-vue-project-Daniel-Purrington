@@ -21,6 +21,17 @@
 //     }
 //   },
 // };
+
+import gql from 'graphql-tag'
+
+export default {
+  apollo: {
+    // Vue-Apollo options here
+        hello: gql`query {
+      hello
+  }
+}
+
 </script>
 
 <style scoped>

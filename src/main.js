@@ -7,7 +7,19 @@ import { store } from './store/store';
 import VueRouter from 'vue-router';
 import { routes } from './routes';
 import Vuelidate from 'vuelidate'
+import VueApollo from 'vue-apollo'
+import ApolloClient from 'apollo-boost'
 
+const apolloClient = new ApolloClient({
+  // You should use an absolute URL here
+  uri: 'http://localhost:4000'
+})
+
+const apolloProvider = new VueApollo({
+  defaultClient: apolloClient,
+})
+
+Vue.use(VueApollo)
 Vue.use(Vuelidate)
 Vue.use(VueRouter);
 Vue.use(VueResource);
@@ -33,11 +45,12 @@ Vue.filter('currency', (value) => {
 })
 
 new Vue({
+  el: '#app',
   vuetify,
   router: router,
   store,
+  apolloProvider,
   render: h => h(App)
 }).$mount('#app')
-
 
 // https://console.firebase.google.com/u/0/project/project-vue-65b6f/database/project-vue-65b6f/data
