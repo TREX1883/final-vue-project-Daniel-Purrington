@@ -39,4 +39,7 @@ export default {
 .container {
   background-color: black;
 }
+.h1 {
+  text-align:center;
+}
 </style>
