@@ -26,10 +26,11 @@ import gql from 'graphql-tag'
 
 export default {
   apollo: {
-    // Vue-Apollo options here
-        hello: gql`query {
+    // Simple query that will update the 'hello' vue property
+    hello: gql`query {
       hello
-  }
+    }`,
+  },
 }
 
 </script>
