@@ -2,25 +2,31 @@
   <v-app>
     <v-content>
       <h1>GraphQL</h1>
-      <!-- <magic-grid :mtgs="mtgs"></magic-grid> -->
+      <div>{{ allMtgs }}</div>
     </v-content>
   </v-app>
 </template>
 
  <script>
-// import MagicGrid from './MagicGrid.vue'
-// import { mtgs } from './MTG-api.js'
+import gql from 'graphql-tag'
 
-// export default {
-//   components: {
-//     'magic-grid': MagicGrid,
-//   },
-//   data: () => {
-//     return {
-//       mtgs
-//     }
-//   },
-// };
+export default {
+  data() {
+    return {
+      allMtgs: [],
+    }
+  },
+  apollo: {
+    // Simple query that will update the 'allMTGs' vue property
+    allMtgs: gql`query {
+      allMtgs {
+    id
+    name    
+    text
+  }
+    }`,
+  },
+}
 </script>
 
 <style scoped>
