@@ -1,8 +1,9 @@
 <template class="container">
   <v-app>
     <v-content>
-      <h1>GraphQL</h1>
-      <div>{{ allMtgs }}</div>
+      <h1>GraphQL2</h1>
+      <div>{{ allMtgs }} test </div>
+      
     </v-content>
   </v-app>
 </template>
